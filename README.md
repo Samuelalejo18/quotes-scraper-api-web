@@ -19,10 +19,19 @@
 ```bash
 git clone https://github.com/Samuelalejo18/quotes-scraper-api-web.git
 cd quotes-scraper-api-web/Backend-api
+---
 
+#### 🚀 Las tablas y la base de datos se crea al inicar la aplicacion, de igual forma se encuentra el script de la base de datos
 
-### 🚀 Las tablas y la base de datos se crea al inicar la aplicacion, de igual forma se encuentra el script de la base de datos
+#### Crear un archivo .inv en la raiz de la ruta  quotes-scraper-api-web/Backend-api, y pegar las variables de entorno ( en este caso se pegaran en este readme,pero realmente no se debe hacer)
 
+DB_HOST=mysql
+DB_USER=root
+DB_PASSWORD=123456789
+DB_NAME=scraping
+PORT=3000
+
+---
 # Construir y levantar contenedores
 docker-compose up --build
 
@@ -71,6 +80,8 @@ Backend-api/
 
 
 ## Comandos linux
+
+sudo docker compose up --build
 
 # Verificar si MySQL está corriendo
 sudo systemctl status mysql
