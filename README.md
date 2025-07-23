@@ -24,7 +24,7 @@ cd Backend-api
 
 #### 🚀 Las tablas y la base de datos se crea al inicar la aplicacion, de igual forma se encuentra el script de la base de datos
 
-#### Crear un archivo .inv en la raiz de la ruta  quotes-scraper-api-web/Backend-api, y pegar las variables de entorno ( en este caso se pegaran en este readme,pero realmente no se debe hacer)
+#### Crear un archivo .env en la raiz de la ruta  quotes-scraper-api-web/Backend-api, y pegar las variables de entorno ( en este caso se pegaran en este readme,pero realmente no se debe hacer)
 
 DB_HOST=mysql
 DB_USER=root
