@@ -18,8 +18,9 @@
 
 ```bash
 git clone https://github.com/Samuelalejo18/quotes-scraper-api-web.git
-cd quotes-scraper-api-web/Backend-api
+cd Backend-api
 ---
+
 
 #### 🚀 Las tablas y la base de datos se crea al inicar la aplicacion, de igual forma se encuentra el script de la base de datos
 
@@ -31,6 +32,12 @@ DB_PASSWORD=123456789
 DB_NAME=scraping
 PORT=3000
 
+----
+
+## Instalar las dependencias
+npm i
+
+---
 ---
 # Construir y levantar contenedores
 docker-compose up --build
