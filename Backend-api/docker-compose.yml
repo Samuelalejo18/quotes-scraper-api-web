@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  backend:
+    build: .
+    container_name: quotes-backend
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mysql
+      DB_USER: root
+      DB_PASSWORD: 123456789
+      DB_NAME: scraping
+      PORT: 3000
+    depends_on:
+      - mysql
+    volumes:
+      - .:/app
+    command: npm run dev
+
+  mysql:
+    image: mysql:8
+    container_name: quotes-mysql
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: scraping
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
